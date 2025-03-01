@@ -9,9 +9,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <header class="max-w-lg mx-auto bg-gray-200 rounded-md">
+    <header class=" mx-auto bg-gray-200 rounded-md  ml-4 mr-4">
         <!-- nav -->
-        <div class="h-8 flex items-center justify-center gap-60 border-none ">
+        <div class="h-8 flex items-center justify-center gap-200 border-none ">
             <div class="flex gap-1">
                 <img class="w-6 h-6" src="assets/logo.png" alt="">
                 <h1>Dev<span class="font-bold">Board</span>
@@ -27,9 +27,9 @@
             </div>
         </div>
     </header>
-    <main class=" "></main>
-        <section class="h-8 mt-4 mx-71 gap-60 border-none">
-            <div class="flex gap-2">
+    <main class="">
+        <section class="mt-4 max-w-screen-xl">
+            <div class="flex gap-2 justify-center">
                 <div class="flex items-center gap-2 bg-gray-200 px-2 rounded-md">
                     <img class="w-4 h-4" src="assets/checkbox.png" alt="">
                     <div class="my-2">
@@ -37,15 +37,15 @@
                         <p class="text-1xl font-bold">05</p>
                     </div>
                 </div>
-
-                <div class="flex items-center gap-2 bg-gradient-to-r from-blue-500 to-blue-300  px-2 rounded-md">
+        
+                <div class="flex items-center gap-2 bg-gradient-to-r from-blue-500 to-blue-300  hover:from-violet-500 hover:to-violet-300 px-2 rounded-md">
                     <img class="w-6 h-6" src="assets/board.png" alt="">
                     <div class="my-2">
                         <p class="text-white text-xs">Discover Something</p>
                         <p class="text-xs text-white">New Today!</p>
                     </div>
                 </div>
-
+        
                 <div class="flex items-center gap-2 bg-gray-200 px-2 rounded-md">
                     <img class="w-4 h-4" src="assets/calender.png" alt="">
                     <div class="my-2">
@@ -53,11 +53,125 @@
                         <p class="text-xs font-semibold">Jul 28 2025</p>
                     </div>
                 </div>
-               <!-- card -->
-        
-                
             </div>
         </section>
+        
+        <!-- card -->
+        <section class="mt-4 ml-4 mx-auto  gap-4">
+            <div class="grid grid-cols-3 gap-x-2 gap-y-2">
+                <div class="card bg-base-100 bg-gray-200 p-4">
+                    <div class="card-body">
+                        <span class="badge badge-xs text-white bg-violet-600">ShopEase</span>
+                        <div class="justify-between">
+                            <h2 class="text-xl font-semibold">Fix Mobile Button Issue</h2>
+                        </div>
+                        <div>
+                            <p class="bg-base-100 px-3 py-3 rounded-lg">To fix the mobile button issue, ensure proper responsive design using Tailwind CSS classes like `w-full` and `px-4 py-2` for better adaptability.</p>
+                        </div>
+                        <div class="flex mt-6 justify-between items-center">
+                            <div>
+                                <p class="text-gray-600 text-xs">Deadline</p>
+                                <p class="text-lg font-bold">21 March 2025</p>
+                            </div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 bg-gray-200 p-4">
+                    <div class="card-body">
+                        <span class="badge badge-xs text-white bg-violet-600">CloudSync</span>
+                        <div class="justify-between">
+                            <h2 class="text-xl font-semibold">Add Dark Mode</h2>
+                        </div>
+                        <div>
+                            <p class="bg-base-100 px-3 py-3 rounded-lg">To add dark mode, use CSS media queries or a JavaScript toggle to switch between light and dark themes by changing CSS variables or classes.</p>
+                        </div>
+                        <div class="flex mt-6 justify-between items-center">
+                            <div>
+                                <p class="text-gray-600 text-xs">Deadline</p>
+                                <p class="text-lg font-bold">21 March 2025</p>
+                            </div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 bg-gray-200 p-4">
+                    <div class="card-body">
+                        <span class="badge badge-xs text-white bg-violet-600">SwiftPay</span>
+                        <div class="justify-between">
+                            <h2 class="text-xl font-semibold">Optimize  Home page </h2>
+                        </div>
+                        <div>
+                            <p class="bg-base-100 px-3 py-3 rounded-lg">To optimize the homepage, focus on improving load times, simplifying the design, and ensuring responsive, user-friendly navigation.</p>
+                        </div>
+                        <div class="flex mt-6 justify-between items-center">
+                            <div>
+                                <p class="text-gray-600 text-xs">Deadline</p>
+                                <p class="text-lg font-bold">21 March 2025</p>
+                            </div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 bg-gray-200 p-4">
+                    <div class="card-body">
+                        <span class="badge badge-xs text-white bg-violet-600">Meta</span>
+                        <div class="justify-between">
+                            <h2 class="text-xl font-semibold">Add new emoji 🤲</h2>
+                        </div>
+                        <div>
+                            <p class="bg-base-100 px-3 py-3 rounded-lg">To add a new emoji 🤲, simply include it in your content or code by copying and pasting the emoji where you need it.</p>
+                        </div>
+                        <div class="flex mt-6 justify-between items-center">
+                            <div>
+                                <p class="text-gray-600 text-xs">Deadline</p>
+                                <p class="text-lg font-bold">21 March 2025</p>
+                            </div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 bg-gray-200 p-4">
+                    <div class="card-body">
+                        <span class="badge badge-xs text-white bg-violet-600">Google LLC</span>
+                        <div class="justify-between">
+                            <h2 class="text-xl font-semibold">Integrate OpenAI API </h2>
+                        </div>
+                        <div>
+                            <p class="bg-base-100 px-3 py-3 rounded-lg">To integrate the OpenAI API, install the OpenAI SDK and use the `openai` library to make requests for generating completions or other tasks.</p>
+                        </div>
+                        <div class="flex mt-6 justify-between items-center">
+                            <div>
+                                <p class="text-gray-600 text-xs">Deadline</p>
+                                <p class="text-lg font-bold">21 March 2025</p>
+                            </div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 bg-gray-200 p-4">
+                    <div class="card-body">
+                        <span class="badge badge-xs text-white bg-violet-600">Glassdoar</span>
+                        <div class="justify-between">
+                            <h2 class="text-xl font-semibold">Improve Job searching </h2>
+                        </div>
+                        <div>
+                            <p class="bg-base-100 px-3 py-3 rounded-lg">Improving job searching involves tailoring your resume and leveraging job platforms to match your skills with relevant opportunities.</p>
+                        </div>
+                        <div class="flex mt-6 justify-between items-center">
+                            <div>
+                                <p class="text-gray-600 text-xs">Deadline</p>
+                                <p class="text-lg font-bold">21 March 2025</p>
+                            </div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+
+        </section>
+        
     </main>
     <footer>
 
