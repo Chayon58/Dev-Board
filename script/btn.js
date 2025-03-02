@@ -18,7 +18,6 @@ for (let i = 0; i < completedBtns.length; i++) {
         taskNum1.textContent = topTaskCount;
 
         completedBtns[i].disabled = true;
-
         completedBtns[i].innerHTML = 'Completed';
     });
 }
