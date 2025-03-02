@@ -27,6 +27,5 @@ function updateBoard() {
         });
     }
 }
-
 updateBoard();
 
