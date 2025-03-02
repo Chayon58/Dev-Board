@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <header class=" mx-auto bg-gray-200 rounded-md  ml-4 mr-4">
+    <header class=" mx-auto bg-gray-200 rounded-md mt-8  ml-4 mr-4">
         <!-- nav -->
         <div class="h-8 flex items-center justify-center gap-200 border-none ">
             <div class="flex gap-1">
@@ -23,7 +23,7 @@
                         <img class="w-4 h-4 items-center mt-1" src="assets/checkbox.png" alt="">
                         <p id="task_num1" class="font-bold">23</p></button>
                 </div>
-                <img class="w-6 h-6" src="assets/theme-btn.png" alt="">
+                <img id="theme" class="w-6 h-6" src="assets/theme-btn.png" alt="">
             </div>
         </div>
     </header>
@@ -57,7 +57,7 @@
         </section>
         
         <!-- card -->
-        <section class="mt-4 ml-4 mx-auto  gap-4">
+        <section class="mt-4 ml-4 mx-auto gap-4 mr-4">
             <div class="grid grid-cols-3 gap-x-2 gap-y-2">
                 <div class="card bg-base-100 bg-gray-200 p-4">
                     <div class="card-body">
@@ -173,6 +173,7 @@
         </section>
         
     </main>
+    <script src="script/bg_theme.js"></script>
    <script src="script/btn.js"></script>
 </body>
 </html>
