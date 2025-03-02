@@ -1,23 +1,32 @@
-const completedBtns = document.getElementsByClassName('Completed-btn');
 const taskNum = document.getElementById('task-num');
 const taskNum1 = document.getElementById('task_num1');
+const completedBtns = document.getElementsByClassName('Completed-btn');
 
-for (let i = 0; i < completedBtns.length; i++) {
-    completedBtns[i].addEventListener('click', function() {
-        alert('Board Updated Successfully');
+function updateBoard() {
+    let taskAssignedCount = parseInt(taskNum.textContent);
+    let topTaskCount = parseInt(taskNum1.textContent);
 
-        let taskAssignedCount = parseInt(taskNum.textContent);
-        let topTaskCount = parseInt(taskNum1.textContent);
+    for (let i = 0; i < completedBtns.length; i++) {
+        completedBtns[i].addEventListener('click', function() {
+            alert('Board Updated Successfully');
 
-        if (taskAssignedCount > 0) {
-            taskAssignedCount -= 1;
-            taskNum.textContent = taskAssignedCount;
-        }
+            if (taskAssignedCount > 0) {
+                taskAssignedCount -= 1;
+                taskNum.textContent = taskAssignedCount;
+            }
 
-        topTaskCount += 1;
-        taskNum1.textContent = topTaskCount;
+            topTaskCount += 1;
+            taskNum1.textContent = topTaskCount;
 
-        completedBtns[i].disabled = true;
-        completedBtns[i].innerHTML = 'Completed';
-    });
+            completedBtns[i].disabled = true;
+            completedBtns[i].innerHTML = 'Completed';
+
+            if (taskAssignedCount === 0) {
+                alert('Congratulations!! You have completed all the tasks.');
+            }
+        });
+    }
 }
+
+updateBoard();
+
