@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Something</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header class=" mx-auto bg-gray-200 rounded-md mt-8  ml-4 mr-4">
+        <!-- nav -->
+        <div class="h-8 flex items-center justify-center gap-200 border-none ">
+            <div class="flex gap-1">
+                <img class="w-6 h-6" src="assets/logo.png" alt="">
+                <h1>Dev<span class="font-bold">Board</span>
+                </h1>
+            </div>
+            
+                <div class="rounded-md">
+                    <button id="desk" class="h-7 btn btn-primary">Back To Desk</button>
+                </div>
+        
+    </header>
+
+    <section class="mt-4  items-center justify-center h-screen">
+        <h1 class="text-xl font-bold text-center">Blog</h1>
+        <div class="mx-10 mt-4 space-y-2">
+            <div class="bg-red-100 rounded-md px-2 py-2">
+                <h1 class="text-xl font-bold mb-4">Question-1: What are the different ways to select an element in the DOM?</h1>
+                <p class="text-gray-500">There are so many wayes to select an element in the DOM, but we use 'getElementById'
+                    and 'getElementsByClassName' the most.</p>
+            </div>
+            <div class="bg-red-100 rounded-md px-2 py-2">
+                <h1 class="text-xl font-bold mb-4">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+                <p class="text-gray-500">There are so many wayes to select an element in the DOM, but we use 'getElementById'
+                    and 'getElementsByClassName' the most.</p>
+            </div>
+            <div class="bg-red-100 rounded-md px-2 py-2">
+                <h1 class="text-xl font-bold mb-4">Question-3: What is event delegation in the DOM?</h1>
+                <p class="text-gray-500">There are so many wayes to select an element in the DOM, but we use 'getElementById'
+                    and 'getElementsByClassName' the most.</p>
+            </div>
+            <div class="bg-red-100 rounded-md px-2 py-2">
+                <h1 class="text-xl font-bold mb-4">Question-4: What is event bubbling in the DOM?</h1>
+                <p class="text-gray-500">There are so many wayes to select an element in the DOM, but we use 'getElementById'
+                    and 'getElementsByClassName' the most.</p>
+            </div>
+            <div class="bg-red-100 rounded-md px-2 py-2">
+                <h1 class="text-xl font-bold mb-4">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+                <p class="text-gray-500">There are so many wayes to select an element in the DOM, but we use 'getElementById'
+                    and 'getElementsByClassName' the most.</p>
+            </div>
+        </div>
+    </section>
+
+     <script>
+        document.getElementById('desk').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+
+</body>
+</html>
